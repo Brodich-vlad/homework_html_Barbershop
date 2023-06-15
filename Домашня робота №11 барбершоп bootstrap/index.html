@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня робота №8-9 Влад Бродич</title>
+    <!-- Шрифти -->
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,700;1,600;1,700&family=Volkhov&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Стилі -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Медіа-запити -->
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body class="body" id="main-page">
+    <!-- Головна сторінка -->
+    <div class="main-page">
+        <!-- Шапка -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+                <div class="navbar__nav container-fluid">
+                    <a class="header__logo__link navbar-bran" href="#">
+                        <img class="header__logo__img" src="./image/logo/logotype.svg" alt="logo">
+                    </a>
+                    <button class="btn_nav navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#">Appointment</a>
+                            </li>
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#service">Services</a>
+                            </li>
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#team">Team</a>
+                            </li>
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#reviews">Reviews</a>
+                            </li>
+                            <li class="nav__item nav-item">
+                                <a class="item__link link-focus nav-link" href="#contacts">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>   
+        </header>
+        <!-- Головний контент -->
+        <main class="main-contents">
+            <article class="main-content">
+                <!-- Прихований заголовок -->
+                <h1 class="visually-hidden">barber co "dapper bully"</h1>
+                <!-- Секція галерея -->
+                <section  id="gallery">
+                    <div class="gallery-section">
+                        <h2 class="visually-hidden">gallery</h2>
+                        <div class="gallery-left-column">
+                            <div class="left-column__img">
+                                <img src="./image/Gallery/gallery-photo-left.png" alt="a boy in a barbershop" width="370">
+                            </div>
+                        </div>
+                        <ul class="gallery__central-block">
+                            <li class="central-block__top-container">
+                                <ul class="top-container">
+                                    <li class="top-container__item-left">
+                                            <img src="./image/Gallery/gallery-photo1.png" alt="In the photo, a man in a hat looks in the mirror" width="465">
+                                    </li>
+                                    <li class="top-container__item-right">
+                                            <img src="./image/Gallery/gallery-photo2.png" alt="In the photo, the master makes styling" width="465">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item_2 central-block__bottom-container">
+                                <ul class="items2 bottom-container">
+                                    <li class="bottom-container__item-left">
+                                        <img src="./image/Gallery/gallery-photo3.png" alt="hairdresser cutting a client" width="465">
+                                    </li>
+                                    <li class="bottom-container__item-right">
+                                        <img src="./image/Gallery/gallery-photo4.png" alt="barber cuts a client's beard" width="465">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="gallery-right-column">
+                            <div class="right-column__img">
+                                <img class="gallery-photo-right" src="./image/Gallery/gallery-photo-right.png" alt="the master cuts the boy" width="370">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Секція послуги -->
+                <section>
+                    <div class="service-section" id="service">
+                        <!-- Прихований заголовок -->
+                        <h2 class="visually-hidden">service</h2>
+                        <!-- Меню послуг -->
+                        <ul class="service-section__menu-srvice">
+                            <li class="menu-srvice__item item-1">
+                                <div class="item__img">
+                                    <img src="./image/Services/services-photo1.png" alt="Hair Styling" width="350">
+                                </div>
+                                <p class="item__text">Hair Styling</p>
+                            </li>
+                            <li class="menu-srvice__item item-2">
+                                <div class="item__img">
+                                    <img src="./image/Services/services-photo2.png" alt="Beard Trimming" width="350">
+                                </div>
+                                <p class="item__text">Beard Trimming</p>
+                            </li>
+                            <li class="menu-srvice__item item-3">
+                                <div class="item__img">
+                                    <img src="./image/Services/services-photo3.png" alt="Smooth Shave" width="350">
+                                </div>
+                                <p class="item__text">Smooth Shave</p>
+                            </li>
+                            <li class="menu-srvice__item item-4">
+                                <div class="item__img">
+                                    <img src="./image/Services/services-photo4.png" alt="Hair Straightening" width="350">
+                                </div>
+                                <p class="item__text">Hair Straightening</p>
+                            </li>
+                        </ul>
+                        <div class="service-section__img">
+                            <img src="./image/Services/services-photo.jpg" alt="a bag with hairdressing tools on the man's belt" width="945">
+                        </div>
+                    </div>
+                </section>
+                <!-- Секція Команда -->
+                <section>
+                    <div class="team-section" id="team">
+                        <h2 class="team-section__title">Meet Our Highly Skilled Experts</h2>
+                        <ul class="team-masters">
+                            <li class="master">
+                                <img src="./image/Team/team-photo1.png" alt="Meredith" width="404">
+                                <p class="master__name">Meredith</p>  
+                            </li>
+                            <li class="master">
+                                <img src="./image/Team/team-photo2.png" alt="Jason" width="404">
+                                <p class="master__name">Jason</p>  
+                            </li>
+                            <li class="master">
+                                <img src="./image/Team/team-photo3.png" alt="Ryan" width="404">
+                                <p class="master__name">Ryan</p>  
+                            </li>
+                            <li class="master">
+                                <img src="./image/Team/team-photo4.png" alt="James" width="404">
+                                <p class="master__name">James</p>  
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>   
+            <!-- Секція контакти -->
+            <section>
+                <div class="contacts-section" id="reviews">
+                    <div class="contacts-section__box">
+                        <div class="contacts-section__form">
+                            <h2 class="contacts-section__title">Get in touch with Us and send a Message</h2>
+                            <form action="#" class="form" autocomplete="on">
+                                <ul class="form__list">
+                                    <li class="form__list__item-1">
+                                        <input type="text" name="name" id="name" placeholder="&#8194;Name" required>
+                                    </li>
+                                    <li class="form__list__item-2">
+                                        <input type="email" name="email" id="email" placeholder="&#8194;Email" required>
+                                    </li>
+                                    <li class="form__list__item-3">
+                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="&#8194;Message"></textarea>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48418.624767825946!2d-73.94003161937196!3d40.6703542496318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1666937523410!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <!-- Підвал -->
+        <footer class="footer" id="contacts">
+            <div class="footer-box">
+                <address class="footer-box__addr">
+                    <ul class="footer-box__address">
+                        <li class="address">
+                            <a class="address__link link-focus" href="mailto:kumarpratiyush1405@gmail">Email :<span> kumarpratiyush1405@gmail.com</span></a>
+                        </li>
+                        <li class="address">
+                            <a class="address__link link-focus" href="tel:+972723429834"> Phone :<span> +(972) 723429834</span></a>
+                        </li>
+                        <li class="address">
+                            <a class="address__link link-focus" href="#">Headquarters : <span>836th Avenue, 3rd Floor,New York,<br>New York</span></a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="footer-box__work-time">
+                    <h3 class="work-time__title">Opening Hours</h3>
+                    <p class="work-time__text">Monday - Friday : 10:00 am - 05:00 pm</p>
+                    <p class="work-time__text">Saturday : 10:00 am - 02:00 pm</p>
+                </div>
+                <div class="footer-box__social-networks">
+                    <h3 class="social-networks__title">Connect With Us On</h3>
+                    <ul class="social-networks">
+                        <li class="social-networks__item">
+                            <a class="social-networks__link link-focus" href="https://www.instagram.com/" target="_blank">
+                                <img src="./image/logo/instagram.svg" alt="Instagram" width="26">Instagram
+                            </a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a class="social-networks__link link-focus" href="https://uk-ua.facebook.com/" target="_blank">
+                                <img src="./image/logo/facebook.svg" alt="Facebook" width="37">Facebook
+                            </a>
+                        </li>
+                        <li class="social-networks__item">
+                            <a class="social-networks__link link-focus" href="https://twitter.com/?lang=uk" target="_blank">
+                                <img src="./image/logo/twitter.svg" alt="Twitter" width="32">Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

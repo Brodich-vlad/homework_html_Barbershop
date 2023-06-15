@@ -1,0 +1,460 @@
+/* Файл анімації */
+@import url("./animation.css");
+/* Змінні */
+:root{
+    --font-rosario:'Rosario', sans-serif;
+    --font-volkhov:'Volkhov', serif;
+    --font-style-italic: italic;
+    --font-style-normal: normal;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    font-size: 10px;
+    --color-white:#ffffff;
+    --color-E5E5E5: #E5E5E5;
+    --color-FFFCFC: #FFFCFC;
+    --color-hover:#1994e6;
+    --color-black:#000000;
+    --section-height: 88vh;
+}
+/* Загальні стилі */
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+.link-focus:hover,
+.link-focus:focus{
+    color:var(--color-hover);
+    transition: all 0.2s;
+}
+/* Прихований заголовок */
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* Головна сторінка */
+.main-page{
+    width: 100%;
+    max-width: 1620px;
+    font-family: var(--font-rosario);
+    font-style: var(--font-style-italic);
+    margin: 0 auto;
+}
+/* Шапка */
+.navbar{
+    max-width: 1620px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.navbar__nav{
+    padding: 0;
+    min-height: 12vh;
+}
+.btn_nav{
+    font-size: 4rem;
+    margin-right: 2%;
+}
+.navbar-collapse{
+    justify-content: end;
+    padding-right: 2%;
+    overflow: auto;
+}
+.header__logo__link{
+    align-self: stretch;
+    max-height: 12vh;
+    padding: 0;
+    margin: 0;
+}
+.header__logo__img{
+    height: 100%;
+}
+.nav__items{
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5%;
+}
+.nav__item{
+    margin-left: 2vw;
+}
+.item__link{
+    font-weight: var(--font-weight-700);
+    font-size: 3.2rem;
+    color: var(--color-FFFCFC); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+.show{
+    height: 80vh;
+    overflow: auto;
+   }
+/* Секція галерея */
+.gallery-section{
+    width: 100%;
+    min-height: var(--section-height);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 12vh 2% 0 2%;
+}
+.gallery-left-column,
+.gallery-right-column{
+    width: 19.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left-column__img,
+.right-column__img{
+    width: 100%;
+    overflow: hidden;
+}
+.left-column__img>img,
+.right-column__img>img{
+    width: 100%;
+}
+/* Анімація */
+.left-column__img{
+    animation: gallery-photo-left 2s linear 1 forwards;
+}
+.right-column__img{
+    animation: gallery-photo-right 2s linear 1 forwards;
+}
+
+.gallery__central-block{
+    width: 56%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.central-block__top-container,
+.central-block__bottom-container{
+    width: 100%;
+}
+.top-container{
+    margin-bottom: 1%;
+}
+.top-container,
+.bottom-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.top-container__item-left,
+.bottom-container__item-left,
+.top-container__item-right,
+.bottom-container__item-right{
+    margin: 2%;
+    overflow: hidden;
+}
+.top-container__item-left>img,
+.bottom-container__item-left>img,
+.top-container__item-right>img,
+.bottom-container__item-right>img{
+    width: 100%;
+    height: 100%;
+}
+/* Анімація */
+.top-container__item-left,
+.bottom-container__item-left{
+    animation: gallery-photo-left 1s linear 1 forwards;
+}
+.top-container__item-right,
+.bottom-container__item-right{
+    animation: gallery-photo-right 1s linear 1 forwards;
+}
+/* Секція послуги  */
+.service-section{
+    width: 100%;
+    min-height: var(--section-height);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12vh;
+}
+.service-section__menu-srvice{
+    width: 50%;
+    min-height: 500px;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 1% 0 1%;
+}
+.menu-srvice__item{
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item__img{
+    width: 60%;
+    overflow: hidden;
+}
+.item__img>img{
+    width: 100%;
+    height: 100%;
+}
+.item__text{
+    font-weight: var(--font-weight-700);
+    font-size: 3.4rem;
+    line-height: 1.3;
+    color: var(--color-black);
+}
+/* Анімація */
+.item-1{
+    top: 0;
+    left: 0;
+    animation: animationItem1 10s linear infinite;
+}
+.item-2{
+    top: 0;
+    left: 50%;
+    animation: animationItem2 10s linear infinite;
+}
+.item-3{
+    top: 50%;
+    left: 0;
+    animation: animationItem3 10s linear infinite;
+}
+.item-4{
+    top: 50%;
+    left: 50%;
+    animation: animationItem4 10s linear infinite;
+}
+.service-section__img{
+    width: 50%;
+    height: 100%;
+   overflow: hidden;
+}
+.service-section__img>img{
+    width: 130%;
+    height: 100%;
+}
+/* Секція Команда */
+.team-section{
+    min-height: var(--section-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+}
+.team-section__title{
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-700);
+    font-size: 8rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--color-black);
+    text-align: center;
+}
+.team-masters{
+    display: flex;
+    justify-content: center;
+
+}
+.master{
+    width: 20%;
+    position: relative;
+    border-radius: 20px;
+    margin: 2%;
+    cursor: pointer;
+    transition: all .3s;
+    overflow: hidden;
+}
+.team-masters:hover li,
+.team-masters:focus li{
+    filter: brightness(0.6);
+}
+.team-masters>li:hover,
+.team-masters>li:focus{
+    filter: none;
+}
+.master>img{
+    width: 100%;
+    height: 100%;
+}
+.master__name{
+    width: 100%;
+    height: 0;
+    font-family: var(--font-volkhov);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    font-size: 4rem;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFAFA;
+    background: rgba(163, 83, 10, 0.7);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    transition: all .3s;
+}
+.team-masters>li:hover .master__name,
+.team-masters>li:focus .master__name{
+    height: 25%;
+}
+/* Секція контакти */
+.contacts-section{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+    padding: 0 5% 0 5%;
+}
+.contacts-section__box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+.contacts-section__form{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contacts-section__title{
+    font-weight: var(--font-weight-700);
+    font-size: 5rem;
+    line-height: 1.21;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 2%;
+}
+.form__list{
+    height: 90%;
+    background: var(--color-E5E5E5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form__list li{
+    margin: 2%;
+}
+.form__list input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: var(--font-rosario);
+    font-weight: var(--font-weight-700);
+    font-size: 3.3rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.5);
+}
+.form__list textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    font-family: var(--font-rosario);
+    font-style: normal;
+    font-weight: var(--font-weight-700);
+    font-size: 3.3rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.5);
+}
+.form__list__item-1{
+    width: 40%;
+    padding: 3.3% 0 2.3% 0;
+}
+.form__list__item-2{
+    width: 50%;
+    padding: 3.3% 0 2.3% 0;
+}
+.form__list__item-3{
+    width: 95%;
+    padding-bottom: 2.3%;
+}
+.map-iframe{
+    width: 40%;
+    margin-left: 3%;
+    max-height: 350px;
+}
+/* Стилі підвал */
+.footer-box{
+    min-height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3% 0 3% 0;
+}
+.footer-box__social-networks,
+.footer-box__work-time,
+.footer-box__address{
+    text-align: center;
+    margin: 2%;
+}
+.address__link{
+    font-family: 'Rosario';
+    font-weight: var(--font-weight-600);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+.address__link span{
+    font-style: var(--font-style-italic);
+}
+.social-networks__title,
+.work-time__title{
+    font-family: var(--font-rosario);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-700);
+    font-size: 3rem;
+    line-height: 1.22;
+    color: var(--color-black);
+}
+.work-time__text{
+    font-family: var(--font-rosario);
+    font-style: var(--font-style-italic);
+    font-weight: var(--font-weight-600);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+
+.social-networks{
+    text-align: center;
+}
+.social-networks__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-rosario);
+    font-style: var(--font-style-italic);
+    font-weight: var(--font-weight-600);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+.social-networks__link>img{
+    margin-right: 10px;
+}
+.social-networks__link>img{
+    width: 3rem;
+}

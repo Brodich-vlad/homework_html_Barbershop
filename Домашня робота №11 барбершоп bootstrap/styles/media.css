@@ -1,0 +1,225 @@
+@media screen and (min-width: 1600px){
+    /* Секція галерея */
+    .gallery-section{
+        max-height: 1200px;
+    }
+    .service-section{
+        max-height: 1200px;
+    }
+    .team-section{
+        max-height: 1200px;
+    }
+    .contacts-section{
+        max-height: 1000px;
+    }
+}
+@media screen and (max-width: 1600px){
+    /* Секція контакти */
+    .form__list input{
+        font-size: 3rem;
+    }
+    .form__list textarea{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    /* Змінні */
+    :root{
+        font-size: 8px;
+    }
+    /* Секція послуги  */
+    .item__img{
+        width: 65%;
+    }
+    /* Секція контакти */
+    .form__list textarea,
+    .form__list input{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 992px){
+    /* Змінні */
+    :root{
+        font-size: 7px;
+    }
+    .navbar__nav{
+        height: auto;
+    }
+    .nav__items{
+        width: 95%;
+        display: block;
+        background: var(--color-black);
+        border-radius: 0 0 70px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 1% 0 7% 1%;
+        margin: 0 auto;
+    } 
+    .item__link{
+        width: 83%;
+        display: inline-block;
+        font-size: 4rem; 
+        color: var(--color-FFFCFC);
+        border-radius: 15px;
+        padding-left: 8%;
+        margin: 1%;
+    }
+    .item__link:hover,
+    .item__link:focus{
+        background-color: rgb(53, 47, 47);
+        transform: scale(1.1);
+    }
+    /* Секція галерея */
+    .gallery-section{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .gallery__central-block{
+        order: 1;
+        width: 100%;
+    }
+    .gallery-left-column,
+    .gallery-right-column{
+        margin: 2%;
+        width: 46%;
+    }
+    .left-column__img{
+        animation: gallery-photo-left 1s linear 1 forwards;
+    }
+    .right-column__img{
+        animation: gallery-photo-right 1s linear 1 forwards;
+    }
+    /* Секція послуги  */
+    .service-section{
+        flex-direction: column-reverse;
+    }
+    .service-section__menu-srvice{
+       height: 850px;
+        width: 90%;
+    }
+    .item__img{
+        width: 70%;
+        height: auto;
+    }
+    .item__text{ 
+        font-size: 5rem;
+    }
+    .service-section__img{
+        width: 92%;
+        height: auto;
+        border-radius: 20px;
+        margin-bottom: 5%;
+    }
+    /* Секція Команда */
+    .team-masters{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .master{
+        width: 45%;
+        border-radius: 40px;
+    }
+    .master__name{
+        border-radius: 0 0 40px 40px; 
+    }
+    /* Секція контакти  */ 
+    .contacts-section__box{
+        flex-direction: column;
+    }
+    .contacts-section__form{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .map-iframe{
+        width: 100%;
+        margin-left: 0; 
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 768px){
+    /* Змінні */
+    :root{
+        font-size: 6.2px;
+    }
+    /* Шапка */
+    .btn_nav{
+        font-size: 2.5rem;
+    }
+    /* Секція галерея */
+    .top-container,
+    .bottom-container{
+        width: 100%;
+        flex-direction:column-reverse;
+    }
+    .gallery__central-block{
+        order: 0;
+        min-width: 100%;
+    }
+    .top-container__item-left,
+    .bottom-container__item-left,
+    .top-container__item-right,
+    .bottom-container__item-right{
+        width: 97%;
+    }
+    .gallery-left-column,
+    .gallery-right-column{
+        margin: 2%;
+        width: 100%;
+    }
+    /* Секція послуги  */
+    .service-section{
+        min-height: auto;
+    }
+    .service-section__img{
+        display: none;
+    }
+    .service-section__menu-srvice{
+        height: 550px;
+    }
+    .item__img{
+        width: 70%;
+    }
+    .item__text{
+        font-size: 4rem;
+    }
+    /* Секція Команда */
+    .team-section__title{
+        font-style: var(--font-style-normal);
+        font-weight: var(--font-weight-700);
+        font-size: 6rem;
+        line-height: 1.2;
+        text-transform: capitalize;
+        color: var(--color-black);
+        text-align: center;
+    }
+    .master{
+        width: 90%;
+    }
+    .master__name{
+        font-size: 8rem;
+        border-radius: 0 0 30px 30px;
+    }
+        /* Секція контакти  */
+        .contacts-section{
+        padding-top: 2%;
+        } 
+    .contacts-section__box{
+        flex-direction: column-reverse;
+    }
+    .form__list li{
+        margin: 1%;
+    }
+    .form__list__item-1,
+    .form__list__item-2{
+        width: 95%;
+    }
+    .form__list__item-1{
+        padding-bottom: 0;
+    }
+    /* Стилі підвал */
+    .footer-box{
+        padding-left: 5%;
+        padding-right: 5%;   
+    }
+}
